@@ -1,4 +1,4 @@
-import { Foot } from "./Components/Footer"
+import { Foot } from "./assets/Components/Footer"
 import './App.css'
 
 export function App() {
