@@ -1,11 +1,11 @@
-import { Foot } from "./assets/Components/Footer"
-import './App.css'
+// import { Foot } from "./assets/Components/Footer"
 
 export function App() {
 
   return (
     <>
-      <Foot/>
+      {/* <Foot/> */}
+      <p>Hello</p>
     </>
   )
 }
