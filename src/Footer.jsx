@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export function Foot() {
 
     return (
@@ -10,7 +11,7 @@ export function Foot() {
                     </div>
 
                     <div className="flex-1 min-w-[200px] m-2 text-left">
-                        <h3 className="text-lg font-semibold">Contact Us</h3>
+                    <Link to="/About"><div className="text-lg font-semibold">Contact Us</div></Link>
                         <p>Email: <a href="mailto:financtionary@gmail.com." className="text-gray-700">financtionary@gmail.com</a></p>
                         {/* <p>Phone: <a href="tel:+" className="text-gray-700">+91 </a></p> */}
                         <p>Address: <a className="text-gray-700">G.E. Road, Raipur, India</a></p>
