@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App.jsx'
 import { Foot } from './Footer'
 import './index.css'
-    import { About } from './About'
+import { About } from './About'
 
 const router = createBrowserRouter([
   {
