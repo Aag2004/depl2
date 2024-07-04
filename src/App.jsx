@@ -1,20 +1,35 @@
-import { useState } from 'react'
-import { Hello } from './Hello'
-
-import reactLogo from './assets/react.svg'
-import './App.css'
 import React from 'react';
-import { Outlet } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { Foot } from './Footer';
+import { About } from './About';
+
+import './App.css';
+
 function App() {
   return (
-    <>
-    <Outlet/>
-      
-    </>
-  )
+    <Router basename="/depl2">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Foot />} />
+          <Route path="/About" element={<About />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+function Layout() {
+  return (
+    <>
+      <Outlet />
+      {/* <Foot /> */}
+    </>
+  );
+}
+
+export default App;
+
 
 {/* <div>
         <a href="https://vitejs.dev" target="_blank">
